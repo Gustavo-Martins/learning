@@ -14,7 +14,7 @@ def inputNumber(number):
 
 
 number1 = inputNumber('Digite um número: ')
-number2 = inputNumber('Digite um número: ')
+number2 = inputNumber('Digite outro número: ')
 
 sum = number1 + number2
 
