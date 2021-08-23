@@ -1,2 +1,3 @@
-# Estudos atuais
-Python Revision 2020
+# Currently Studying
+* Docker
+* Python
