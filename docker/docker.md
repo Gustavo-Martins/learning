@@ -16,8 +16,11 @@ List locally stored images.
 **docker images**
 List images
 
-**docker history**
+**docker history _imagename_**
 Shows the history of an image
+
+**docker logs _containername_**
+Fetch the logs of a container
 
 
 ## Build
@@ -34,6 +37,9 @@ Runs container
 
 **docker container run -d _containername_**
 Runs container detached
+
+**docker start _containername_ _anothercontainer_**
+Start one or more stopped containers
 
 **docker stop _containername_**
 Stops a running container
