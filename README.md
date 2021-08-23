@@ -1,3 +1,3 @@
 # Currently Studying
-Docker
-Python
+* Docker
+* Python
