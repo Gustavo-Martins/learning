@@ -24,8 +24,11 @@ Fetch the logs of a container
 
 
 ## Build
-**docker build _imagename_**
-Build an image from a Dockerfile in the current directory
+**docker build _imagename_** .
+Builds an image from a Dockerfile in the current directory
+
+**docker build -t '_imagename_'** .
+Builds and tags image with a name
 
 **docker image rm _imagename:4.7_**
 Deletes an image locally
