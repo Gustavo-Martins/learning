@@ -1,0 +1,45 @@
+---
+- name: Upgrade the OS
+  hosts: all
+  tasks:
+  - name: Upgrade the OS
+    become: true
+    apt:
+      upgrade: dist
+
+- name: Install packages
+  hosts: all
+  become: true
+  tasks:
+    - name: Install automake
+      apt:
+        name: automake
+        state: present
+    - name: Install build-essential
+      apt:
+        name: build-essential
+        state: present
+    - name: Install dumb-init
+      apt:
+        name: dumb-init
+        state: present
+    - name: Install libmicrohttpd-dev
+      apt:
+        name: libmicrohttpd-dev
+        state: present
+    - name: Install libtool
+      apt:
+        name: libtool
+        state: present
+    - name: Install wget
+      apt:
+        name: wget
+        state: present
+
+- name: Post install cleanup
+  hosts: all
+  tasks:
+  - name: Remove dependencies that are no longer required
+    become: true
+    apt:
+      autoremove: true
