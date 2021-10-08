@@ -1,0 +1,13 @@
+---
+- name: Install basic Debian packages
+  hosts: all
+  tasks:
+    - name: Install packages
+      become: true
+      apt:
+        name: "{{ item }}"
+      loop:
+        - git
+        - vim
+        - wget
+      when: ansible_distribution == "Debian"
