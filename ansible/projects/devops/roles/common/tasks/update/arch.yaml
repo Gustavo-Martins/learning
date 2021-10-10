@@ -1,0 +1,9 @@
+---
+- hosts: all
+  become: true
+  tasks:
+  - name: Upgrade Arch
+    when:
+      dist: 'arch'
+      pacman:
+        upgrade: dist
