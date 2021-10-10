@@ -1,9 +1,0 @@
----
-- hosts: all
-  become: true
-  tasks:
-  - name: Upgrade Debian
-    when:
-      dist: debian
-      apt:
-        upgrade: dist

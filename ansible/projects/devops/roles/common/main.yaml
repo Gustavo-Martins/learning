@@ -1,0 +1,10 @@
+---
+# roles/common/tasks/main.yaml
+tasks:
+  - name: Update Debian nodes
+    import_tasks: debian.yaml
+    when: ansible_facts['os_family']|lower == 'debian'
+
+  - name: Update Arch nodes
+    import_tasks: arch.yaml
+    when: ansible_facts['os_family']|lower == 'archlinux'
