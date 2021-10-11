@@ -2,4 +2,4 @@
 - name: Update webservers
   hosts: all
   roles:
-    - webservers
+    - common

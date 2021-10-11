@@ -1,0 +1,8 @@
+all:
+  children:
+    httpserver:
+      hosts:
+        canary.stormfather:
+  vars:
+    ansible_ssh_user: root
+    

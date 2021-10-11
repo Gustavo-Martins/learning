@@ -1,0 +1,5 @@
+---
+- hosts: httpserver
+  roles:
+    - role: httpserver
+
