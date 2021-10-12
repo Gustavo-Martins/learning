@@ -1,0 +1,25 @@
+---
+- hosts: master
+  become: true
+  tasks:
+    - name: Install public keys
+      ansible.posix.authorized_key:
+        user: gustavo
+        state: present
+        key: "{{ lookup('file'), '~/.ssh/ansible_id_ed25519.pub') }}"
+    - name: Change sudoers file
+      lineinfile:
+      path: /etc/sudoers
+      state: present
+      regexp: '%sudo'
+      line: '%sudo ALL=(ALL) NOPASSWD: ALL'
+      validate: /usr/sbin/visudo -cf %s
+
+- hosts: nodes
+  become: true
+  tasks:
+    - name: Install public keys
+      ansible.posix.authorized_key:
+        user: gustavo
+        state: present
+        key: "{{ lookup('file', '~/.ssh/ansible_id_ed25519.pub') }}"

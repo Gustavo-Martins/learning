@@ -1,0 +1,64 @@
+---
+- name: Upgrade the OS
+  apt:
+    upgrade: dist
+
+- name: Install packages
+  apt:
+    pkg:
+      - automake
+      - build-essential
+      - libmicrohttpd-dev
+      - libtool
+      - supervisor
+    state: present
+
+- name: Download libhttpserver
+  get_url: 
+    url: https://github.com/etr/libhttpserver/archive/refs/tags/{{ httpserver_version }}.tar.gz
+    dest: /{{ httpserver_version }}.tar.gz
+    mode: '0664'
+
+- name: Decompress libhttpserver
+  command: tar xf /{{ httpserver_version }}.tar.gz
+  args: 
+    chdir: /
+    creates: libhttpserver-{{ httpserver_version }}
+
+- name: Bootstrap libhttpserver
+  command: ./bootstrap 
+  args:
+    chdir: /libhttpserver-{{ httpserver_version }}
+    creates: /libhttpserver-{{ httpserver_version }}/configure
+
+- name: Create build directory
+  file:
+    path: /libhttpserver-{{ httpserver_version }}/build
+    state: directory
+
+- name: Compile libhttpserver
+  command: "{{ item }}"
+  loop:
+    - ../configure 
+    - make -j4 
+    - make install
+  args:
+    chdir: /libhttpserver-{{ httpserver_version }}/build
+
+- name: Copy server.cpp
+  copy:
+    src: server.cpp
+    dest: /server.cpp
+
+- name: Compile server.cpp
+  command: g++ -L/usr/local/lib server.cpp -o server -lhttpserver
+  args:
+    chdir: /
+    creates: server
+
+- name: Copy supervisor config
+  copy:
+    src: httpserver.conf
+    dest: /etc/supervisor/conf.d/httpserver.conf
+  notify:
+    - Restart supervisor
