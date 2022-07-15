@@ -5,6 +5,7 @@ choice = ' '
 age_sum = 0
 average_age = 0
 while True:
+	person.clear()
 	person['name'] = str(input('Nome: '))
 	person['sex'] = str(input('Sexo: [M/F] ').strip().upper()[0])
 	while person['sex'] not in 'MF':
@@ -12,27 +13,16 @@ while True:
 		person['sex'] = str(input('Sexo: [M/F] ').strip().upper()[0])
 	person['age'] = int(input('Idade: '))
 	age_sum += person['age']
-	choice = str(input('Quer continuar? [S/N] ').strip().upper()[0])
-	while choice not in 'SN':
-		print('ERRO! Responda apenas S ou N.')
-		choice = str(input('Quer continuar? [S/N] ').strip().upper()[0])
 	registry.append(person.copy())
-	person.clear()
-	if choice in 'S':
-		person['name'] = str(input('Nome: '))
-		person['sex'] = str(input('Sexo: [M/F] ').strip().upper()[0])
-		while person['sex'] not in 'MF':
-			print('ERRO! Por favor, digite apenas M ou F.')
-			person['sex'] = str(input('Sexo: [M/F] ').strip().upper()[0])
-		person['age'] = int(input('Idade: '))
-		age_sum += person['age']
-		registry.append(person.copy())
+	while True:
 		choice = str(input('Quer continuar? [S/N] ').strip().upper()[0])
-		while choice not in 'SN':
-			print('ERRO! Responda apenas S ou N.')
-			choice = str(input('Quer continuar? [S/N] ').strip().upper()[0])
-	if choice in 'N':
+		if choice in 'SN':
+			break
+		print('ERRO! Responda apenas S ou N.')
+	if choice == 'N':
 		break
+
+
 print('-=' * 30)
 print(f'Ao todo foram cadastradas {len(registry)} pessoas.')
 average_age = age_sum / len(registry)
