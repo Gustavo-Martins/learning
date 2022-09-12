@@ -1,4 +1,3 @@
 # Currently Studying
-* Ansible
-* Docker
 * Python
+* Shell Script
