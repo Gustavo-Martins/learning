@@ -34,3 +34,27 @@ def increment(n=0, percent=0, fmt=False):
 	"""
 	rep = (n + (n * 1/percent))
 	return rep if not fmt else format(rep)
+
+
+def summary(price, inc, dec):
+	""""Summary of currency value operations.
+	Keywords Arguments:
+		price -- (float)
+		inc -- (int) increment of price
+		dec -- (int) decement of price
+	Returns:
+		Prints value formatted for currency, double the value,
+		half the value,	% of increment, % of decrement.
+	"""
+	chars = 40
+	flourish = ('-' * chars)
+	print(flourish)
+	print('RESUMO DO VALOR'.center(chars))
+	print(flourish)
+	print(f'Preço analisado: \t{format(price)}')
+	print(f'Dobro do preço: \t{double(price, True)}')
+	print(f'Metade do preço: \t{half(price, True)}')
+	print(f'{inc}% de aumento: \t{increment(price, inc, True)}')
+	print(f'{dec}% de aumento: \t{decrement(price, dec, True)}')
+	print(flourish)
+	
