@@ -1,5 +1,5 @@
-from calendar import c
-from locale import currency
+# from calendar import c
+# from locale import currency
 
 
 def format(price, currency='R$', fmt=False):

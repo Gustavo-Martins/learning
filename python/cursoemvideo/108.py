@@ -1,4 +1,4 @@
-from modules.currency import format, decrement, double, half, increment
+from packages.currency.currency import format, decrement, double, half, increment
 
 
 price = float(input('Digite o preço: '))
