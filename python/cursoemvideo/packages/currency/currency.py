@@ -1,7 +1,3 @@
-# from calendar import c
-# from locale import currency
-
-
 def format(price, currency='R$', fmt=False):
 	"""Returns price formatted as currency.
 	"""
