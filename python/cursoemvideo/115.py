@@ -1,7 +1,14 @@
-from packages.interface.menu import menu_main, menu_option
+from packages.interface.menu import menu_header, menu_option, menu_print_options
 
 
-menu_main()
+menu_header('MENU PRINCIPAL')
+menu_options = ['Ver pessoas cadastradas', 
+		'Cadastrar Novas Pessoas', 
+		'Sair do Sistema']
+menu_print_options(menu_options)
+
+
+# menu_main()
 
 while True:
 	try:
