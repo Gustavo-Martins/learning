@@ -1,14 +1,7 @@
-from packages.interface.menu import flourish, menu_option
+from packages.interface.menu import flourish, menu_main, menu_option
 
 
-
-print(flourish())
-print(f"{'MENU PRINCIPAL':^35}")
-print(flourish())
-print('1 - Ver pessoas cadastradas')
-print('2 - Cadastrar Novas Pessoas')
-print('3 - Sair do Sistema')
-print(flourish())
+menu_main()
 
 while True:
 	try:
@@ -18,7 +11,7 @@ while True:
 		if option < 1 or option > 3:
 			print('Por favor, digite uma opção válida.')
 		elif option == 3:
-			print('Volte sempre!')
+			print('Sistema encerrado. \nVolte sempre!')
 			break
 	except (TypeError, ValueError):
 		print('Por favor, digite um número válido!')
