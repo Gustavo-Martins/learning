@@ -1,4 +1,4 @@
-from packages.interface.menu import flourish, menu_main, menu_option
+from packages.interface.menu import menu_main, menu_option
 
 
 menu_main()
