@@ -5,7 +5,7 @@ def flourish(size=35):
 
 
 def menu_header(txt):
-	"Prints menu header."
+	"""Prints menu header."""
 	flourish()
 	print(txt.center(35))
 	flourish()
