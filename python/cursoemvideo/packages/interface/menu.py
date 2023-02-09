@@ -13,8 +13,8 @@ def menu_header(txt):
 
 def menu_print_options(list):
 	"""Prints main menu options list."""
+	n = 1
 	for item in list:
-		n = 1
 		print(f"{n} - {item}")
 		n += 1
 	flourish()
