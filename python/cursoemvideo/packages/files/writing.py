@@ -31,4 +31,26 @@ def read_file(name):
         print('Ocorreu um erro ao ler o arquivo.')
     else:
         menu_header("PESSOAS CADASTRADAS")
-        print(f.readlines())
+        for row in f:
+            data = row.split(';')
+            data[1] = data[1].replace('\n', '')
+            print(f'{data[0]:<30}{data[1]:>3} anos')
+        #print(f.readlines())
+    finally:
+        f.close()
+
+
+def write_to_file(file, name='desconhecido', age=0):
+    try:
+        # Try to append data to text file
+        f = open(file, 'at')
+    except:
+        print('Ocorreu um erro na abertura do arquivo.')
+    else:
+        try:
+            f.write(f'{name};{age}\n')
+        except:
+            print('Ocorreu um erro ao salvar para o arquivo.')
+        else:
+            print(f'Novo registro de {name} adicionado.')
+            f.close()
