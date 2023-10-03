@@ -2,8 +2,8 @@
 minimum = 0
 maximum = 0
 
-for person in range (1, 6):
-    weight = float(input('Digite o peso da {}ª pessoa: '.format(person)))
+for person in range(1, 6):
+    weight = float(input("Digite o peso da {}ª pessoa: ".format(person)))
     if person == 1:
         minimum = person
         maximum = person
@@ -12,5 +12,7 @@ for person in range (1, 6):
             maximum = weight
         if weight < minimum:
             minimum = weight
-    
-print('O maior peso lido é {} Kg, e o menor peso lido é {} Kg.'.format(maximum, minimum))
+
+print(
+    "O maior peso lido é {} Kg, e o menor peso lido é {} Kg.".format(maximum, minimum)
+)

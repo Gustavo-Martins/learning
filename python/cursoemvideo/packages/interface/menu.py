@@ -1,28 +1,28 @@
 # Package with menu building functions.
 def flourish(size=35):
-	"""Prints a string of '-'s."""
-	print('-' * size)
+    """Prints a string of '-'s."""
+    print("-" * size)
 
 
 def menu_header(txt):
-	"""Prints menu header."""
-	flourish()
-	print(txt.center(35))
-	flourish()
+    """Prints menu header."""
+    flourish()
+    print(txt.center(35))
+    flourish()
 
 
 def menu_print_options(list):
-	"""Prints main menu options list."""
-	n = 1
-	for item in list:
-		print(f"{n} - {item}")
-		n += 1
-	flourish()
+    """Prints main menu options list."""
+    n = 1
+    for item in list:
+        print(f"{n} - {item}")
+        n += 1
+    flourish()
 
 
 def menu_option(option):
-	"""Prints selected main menu option."""
-	txt = f"OPÇÃO {option}"
-	flourish()
-	print(txt.center(35))
-	flourish()
+    """Prints selected main menu option."""
+    txt = f"OPÇÃO {option}"
+    flourish()
+    print(txt.center(35))
+    flourish()
