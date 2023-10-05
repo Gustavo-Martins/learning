@@ -1,4 +1,4 @@
-# Rock, Papper, Scissors game
+"""Rock, Papper, Scissors game."""
 from random import randint
 from time import sleep
 

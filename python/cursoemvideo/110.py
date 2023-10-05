@@ -1,3 +1,4 @@
+"""Basic math with prices."""
 from packages.currency.currency import summary
 
 

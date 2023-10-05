@@ -1,4 +1,4 @@
-# Reads list and prints in random order
+"""Reads list and prints in random order."""
 from random import sample
 
 

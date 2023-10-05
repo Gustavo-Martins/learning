@@ -1,4 +1,4 @@
-# Do basic math and print
+"""Do basic math and print."""
 
 number1 = float(input("Digite um valor: "))
 number2 = float(input("Digite outro valor: "))

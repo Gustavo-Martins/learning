@@ -1,4 +1,4 @@
-# Factorial calculator
+"""Factorial calculator with fancy printing."""
 
 n = int(input("Digite um número para calcular seu fatorial: "))
 counter = n
@@ -10,4 +10,4 @@ while counter > 0:
     print(" x " if counter > 1 else " = ", end="")
     f *= counter
     counter -= 1
-print("{}".format(f))
+print(f"{f}")

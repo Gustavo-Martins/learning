@@ -1,4 +1,4 @@
-# Prints user input information
+"""Prints user input information."""
 
 user_input = input("Digite algo: ")
 

@@ -1,4 +1,4 @@
-# Odds and Evens game
+"""Odds and Evens game."""
 from random import randint
 
 

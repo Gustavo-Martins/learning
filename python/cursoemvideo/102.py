@@ -1,3 +1,6 @@
+"""Prints factorial from a number."""
+
+
 def fat(n, show=True):
     """Returns factorial of a number.
 

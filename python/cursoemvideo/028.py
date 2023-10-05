@@ -1,4 +1,4 @@
-# Guessing game
+"""Guessing game."""
 from random import randint
 from time import sleep
 
@@ -16,4 +16,4 @@ sleep(2)
 if number == rand:
     print("PARABÉNS! Você conseguiu me vencer!")
 else:
-    print("GANHEI! Eu pensei no número {} e não no {}!".format(rand, number))
+    print(f"GANHEI! Eu pensei no número {rand} e não no {number}!")

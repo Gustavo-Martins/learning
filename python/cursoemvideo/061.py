@@ -1,4 +1,4 @@
-# Prints arithmetic progression of 10 numbers
+"""Prints arithmetic progression of 10 numbers."""
 print("Gerador de PA")
 print("-=-" * 10)
 first = int(input("Primeiro termo:  "))

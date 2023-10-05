@@ -1,4 +1,4 @@
-# Randon numbers printing
+"""Randon numbers printing."""
 from random import randint
 
 numbers = (

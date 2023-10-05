@@ -1,4 +1,4 @@
-# Prints numerals
+"""Prints numerals."""
 numerals = (
     "zero",
     "um",

@@ -1,4 +1,4 @@
-# Prints arithmetic progression of 10 numbers
+"""Prints arithmetic progression of 10 numbers."""
 print("10 Termos de uma PA")
 number = int(input("Primeiro termo: "))
 constant = int(input("Razão: "))

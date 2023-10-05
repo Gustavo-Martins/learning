@@ -1,7 +1,8 @@
-# Reads integer and prints basic math operations
+"""Reads integer and prints basic math operations."""
 
 
-def inputInteger(number):
+def input_integer(number):
+    """Checks if input is valid int."""
     while True:
         try:
             number = int(input(number))
@@ -11,18 +12,18 @@ def inputInteger(number):
             return number
 
 
-numero = inputInteger("Digite um número inteiro para ver a sua tabuada: ")
+numero = input_integer("Digite um número inteiro para ver a sua tabuada: ")
 
 
-def basicMath():
+def basic_math():
+    """Multiplies int from 1 to 10."""
     i = 1
-    inputInteger(numero)
-    print("Número recebido {}".format(numero))
+    input_integer(numero)
+    print(f"Número recebido {numero}")
     for n in range(1, 11):
         print("Teste")
-        print("{}".format(numero * i))
+        print(f"{numero * i}")
         i += 1
 
 
-# print('{}'.format(numero))
-basicMath()
+basic_math()

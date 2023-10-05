@@ -1,4 +1,8 @@
+"""Rectangular area calculator."""
+
+
 def área(larg, comp):
+    """Calculates are of a rectangle."""
     a = larg * comp
     print(f"A área de um terreno {larg} * {comp} é de {a}m².")
 

@@ -1,4 +1,4 @@
-# Age and gender classification
+"""Age and gender classification."""
 adults = men = young_woman = 0
 flourish = "-" * 25
 

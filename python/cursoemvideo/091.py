@@ -1,4 +1,4 @@
-# Dice rolls and ranking
+"""Dice rolls and ranking."""
 from operator import itemgetter
 from random import randint
 from time import sleep

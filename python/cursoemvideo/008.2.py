@@ -1,4 +1,4 @@
-# Reads input in metres and prints conversion to others distance units
+"""Reads input in metres and prints conversion to others distance units."""
 
 metre = float(input("Digite um valor em metros: "))
 
@@ -9,14 +9,10 @@ decametre = metre * 0.01
 hectometre = metre * 0.1
 kilometre = metre * 0.001
 
-print("{:.2f} metros equivalem a:".format(metre))
+print(f"{metre:.2f} metros equivalem a:".format(metre))
 print(
-    "{:.2f} milímetros \n{:.2f} centímetros \n{:.2f} decímetros".format(
-        millimetre, centimetre, decimetre
-    )
+    f"{millimetre:.2f} milímetros \n{centimetre:.2f} centímetros \n{decimetre:.2f} decímetros"
 )
 print(
-    "{:.2f} decâmetros \n{:.2f} hectômetros \n{:.2f} quilômetros".format(
-        decametre, hectometre, kilometre
-    )
+    f"{decametre:.2f} decâmetros \n{hectometre:.2f} hectômetros \n{kilometre:.2f} quilômetros"
 )

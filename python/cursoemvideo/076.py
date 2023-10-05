@@ -1,4 +1,4 @@
-# Items list
+"""Prints items list."""
 flourish = "-" * 39
 items = (
     "Papel A4",

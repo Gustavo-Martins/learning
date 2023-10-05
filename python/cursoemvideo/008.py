@@ -1,6 +1,7 @@
-# Converts meters to other distance units
+"""Converts meters to other distance units."""
+
 
 value = float(input("Digite o value em metros: "))
 
-print("{} metros equivalem a {} centímetros.".format(value, (value * 100)))
-print("{} metros equivalem a {} milímetros.".format(value, (value * 1000)))
+print(f"{value} metros equivalem a {value * 100} centímetros.")
+print(f"{value} metros equivalem a {value * 1000} milímetros.")

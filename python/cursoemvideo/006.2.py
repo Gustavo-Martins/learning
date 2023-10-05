@@ -1,4 +1,4 @@
-# Reads a number and prints double, triple and square root
+"""Reads a number and prints double, triple and square root."""
 
 number = float(input("Digite um número: "))
 

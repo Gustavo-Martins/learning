@@ -1,4 +1,4 @@
-# Checks if 3 sides make a triangle
+"""Checks if 3 sides make a triangle."""
 print("-=-" * 16)
 print("O valor de 3 retas forma um triângulo?")
 print("-=-" * 16)

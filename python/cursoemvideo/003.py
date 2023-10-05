@@ -1,4 +1,4 @@
-# Sums and print two numbers
+"""Sums and print two numbers."""
 
 number1 = int(input("Digite o primeiro número: "))
 number2 = int(input("Digite o segundo número: "))

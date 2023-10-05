@@ -1,4 +1,4 @@
-# Prints list, evens list, and odds list
+"""Prints list, evens list, and odds list."""
 numbers = []
 evens = []
 odds = []

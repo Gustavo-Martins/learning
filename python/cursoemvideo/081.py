@@ -1,3 +1,4 @@
+"""Prints reversed order list."""
 numbers = []
 while True:
     n = int(input("Digite um valor: "))

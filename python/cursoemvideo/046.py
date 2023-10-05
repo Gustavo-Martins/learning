@@ -1,4 +1,4 @@
-# Countdown
+"""Countdown."""
 from time import sleep
 
 

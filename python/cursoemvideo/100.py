@@ -1,9 +1,10 @@
-# Draw numbers and sum evens
+"""Draw numbers and sum evens."""
 from random import randint
 from time import sleep
 
 
 def draw_num(list):
+    """Randomly draws 5 values from list."""
     print("Sorteando 5 valores da lista: ", end="")
     for i in range(0, 5):
         n = randint(1, 10)
@@ -14,6 +15,7 @@ def draw_num(list):
 
 
 def even_sum(list):
+    """Adds numbers from list."""
     even_total = 0
     for n in list:
         if n % 2 == 0:

@@ -1,4 +1,4 @@
-# Calculator with menu
+"""Calculator with menu."""
 from time import sleep
 
 
@@ -18,14 +18,14 @@ while choice in range(0, 5):
     choice = int(input("Qual é a sua opção? "))
 
     if choice == 1:
-        print("A soma de {} e {} é: {:.2f}".format(x, y, (x + y)))
+        print(f"A soma de {x} e {y} é: {x + y:.2f}")
     elif choice == 2:
-        print("O produto de {} e {} é: {:.2f}".format(x, y, (x * y)))
+        print(f"O produto de {x} e {y} é: {x * y:.2f}")
     elif choice == 3:
         if x > y:
-            print("{} é maior que {}.".format(x, y))
+            print(f"{x} é maior que {y}.")
         if x < y:
-            print("{} é maior que {}.".format(y, x))
+            print("{x} é maior que {y}.")
         if x == y:
             print("Os dois números são iguais.")
     elif choice == 4:

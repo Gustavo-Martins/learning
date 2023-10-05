@@ -1,4 +1,4 @@
-# Prints Fibonacci sequence
+"""Prints Fibonacci sequence."""
 print("-" * 30)
 print("Sequência de Fibonacci")
 print("-" * 30)

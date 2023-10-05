@@ -1,4 +1,4 @@
-# Saves names and weights
+"""Saves names and weights."""
 people = []
 data = []
 min = max = 0

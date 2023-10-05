@@ -1,4 +1,4 @@
-# ATM simulator
+"""ATM simulator."""
 flourish = "=" * 40
 
 print(flourish)

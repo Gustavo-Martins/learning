@@ -1,3 +1,4 @@
+"""Checks Pudim.com.br status."""
 import urllib.request
 
 

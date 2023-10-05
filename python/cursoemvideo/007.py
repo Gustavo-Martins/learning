@@ -1,4 +1,4 @@
-# Reads two grades and prints arithmetic mean
+"""Reads two grades and prints arithmetic mean."""
 
 grade1 = float(input("Digite a primeira nota: "))
 grade2 = float(input("Digite a segunda nota: "))

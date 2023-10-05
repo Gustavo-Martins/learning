@@ -1,4 +1,6 @@
-# Rectangular area calculation
+"""Rectangular area calculation."""
+
+
 def area(width, depth):
     return width * depth
 

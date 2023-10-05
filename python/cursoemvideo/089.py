@@ -1,4 +1,4 @@
-# Stores and displays students grades
+"""Stores and displays students grades."""
 grades = list()
 flourish = "=-" * 15
 

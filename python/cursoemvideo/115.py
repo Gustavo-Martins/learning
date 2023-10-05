@@ -1,3 +1,4 @@
+"""Basic person database."""
 from packages.data.check import read_int
 from packages.files.writing import create_file, file_exists, read_file, write_to_file
 from packages.interface.menu import menu_header, menu_option, menu_print_options

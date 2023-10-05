@@ -1,8 +1,8 @@
-# Reads two grades and prints average
+"""Reads two grades and prints average."""
 grade1 = float(input("Digite a primeira nota: "))
 grade2 = float(input("Digite a segunda nota: "))
 grade_average = (grade1 + grade2) / 2
-print("Tirando {:.1f} e {:.1f}, a média é {:.1f}".format(grade1, grade2, grade_average))
+print(f"Tirando {grade1:.1f} e {grade2:.1f}, a média é {grade_average:.1f}")
 
 if grade_average < 5:
     print("O aluno(a) está REPROVADO")

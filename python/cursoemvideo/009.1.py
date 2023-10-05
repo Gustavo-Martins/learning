@@ -1,16 +1,16 @@
-# Reads integer and prints multiplication math
+"""Reads integer and prints multiplication math."""
 
 num = int(input("Digite um número inteiro para ver a sua tabuada: "))
 
 print("-" * 12)
-print("{} X {:2} = {}".format(num, 1, (num * 1)))
-print("{} X {:2} = {}".format(num, 2, (num * 2)))
-print("{} X {:2} = {}".format(num, 3, (num * 3)))
-print("{} X {:2} = {}".format(num, 4, (num * 4)))
-print("{} X {:2} = {}".format(num, 5, (num * 5)))
-print("{} X {:2} = {}".format(num, 6, (num * 6)))
-print("{} X {:2} = {}".format(num, 7, (num * 7)))
-print("{} X {:2} = {}".format(num, 8, (num * 8)))
-print("{} X {:2} = {}".format(num, 9, (num * 9)))
-print("{} X {:2} = {}".format(num, 10, (num * 10)))
+print(f"{num} X {1:2} = {num * 1}")
+print(f"{num} X {2:2} = {num * 2}")
+print(f"{num} X {3:2} = {num * 3}")
+print(f"{num} X {4:2} = {num * 4}")
+print(f"{num} X {5:2} = {num * 5}")
+print(f"{num} X {6:2} = {num * 6}")
+print(f"{num} X {7:2} = {num * 7}")
+print(f"{num} X {8:2} = {num * 8}")
+print(f"{num} X {9:2} = {num * 9}")
+print(f"{num} X {10:2} = {num * 10}")
 print("-" * 12)

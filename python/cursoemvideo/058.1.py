@@ -1,4 +1,4 @@
-# Improved guessing game
+"""Improved guessing game."""
 from random import randint
 from time import sleep
 
@@ -17,4 +17,4 @@ while guess != rand:
     elif guess < rand:
         guess = int(input("Mais! Tente outro palpite: "))
     count += 1
-print("Acertou! Foram necessárias {} tentativas para acertar.".format(count))
+print(f"Acertou! Foram necessárias {count} tentativas para acertar.")

@@ -1,4 +1,4 @@
-# Calculates triangle rectangle hypotenuse
+"""Calculates triangle rectangle hypotenuse."""
 from math import hypot
 
 
@@ -7,4 +7,4 @@ side2 = float(input("Digite a medida do segundo cateto: "))
 
 hypotenuse = hypot(side1, side2)
 
-print("A hipotenusa é: {:.2f}.".format(hypotenuse))
+print(f"A hipotenusa é: {hypotenuse:.2f}.")

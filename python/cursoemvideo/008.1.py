@@ -1,7 +1,7 @@
-# Converts meters to centimeters and milimeters
+"""Converts meters to centimeters and milimeters."""
 
 m = float(input("Digite um valor em metros: "))
 cm = m * 100
 mm = m * 1000
 
-print("{} metros equivalem a {} centímetros e {} milímetros.".format(m, cm, mm))
+print(f"{m} metros equivalem a {cm} centímetros e {mm} milímetros.")

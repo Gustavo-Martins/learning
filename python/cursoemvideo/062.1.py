@@ -1,4 +1,4 @@
-# Prints arithmetic progression
+"""Prints arithmetic progression."""
 first = int(input("Primeiro termo: "))
 constant = int(input("Razão da PA: "))
 term = first
@@ -13,4 +13,4 @@ while more != 0:
         counter += 1
     print("PAUSA")
     more = int(input("Quantos termos você quer mostrar a mais: "))
-print("Progressão finalizada com {} termos mostrados.".format(total))
+print(f"Progressão finalizada com {total} termos mostrados.")

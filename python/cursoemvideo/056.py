@@ -1,11 +1,11 @@
-# Reads 4 person data and prints statistics
+"""Reads 4 person data and prints statistics."""
 age_total = 0
 age_average = 0
 oldest = 0
 young_women = 0
 
 for person in range(1, 5):
-    print("-----{}ª----- pessoa".format(person))
+    print(f"-----{person}ª----- pessoa")
     name = str(input("Nome: ")).strip()
     age = int(input("Idade: "))
     age_total += age
@@ -22,6 +22,6 @@ for person in range(1, 5):
 
 age_average = age_total / 4
 
-print("A idade do homem mais velho é {} anos, e seu nome é {}.".format(oldest, elder))
-print("A média de idade do grupo é de {:.1f} anos.".format(age_average))
-print("Ao todo {} mulheres tem menos de 20 anos.".format(young_women))
+print(f"A idade do homem mais velho é {oldest} anos, e seu nome é {elder}.")
+print(f"A média de idade do grupo é de {age_average:.1f} anos.")
+print(f"Ao todo {young_women} mulheres tem menos de 20 anos.")

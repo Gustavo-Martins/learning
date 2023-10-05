@@ -1,4 +1,4 @@
-# Stores values in ordered list
+"""Stores values in ordered list."""
 flourish = "=-" * 30
 numbers = []
 for c in range(0, 5):

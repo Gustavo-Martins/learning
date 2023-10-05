@@ -9,7 +9,5 @@ angle_cos = cos(angle_rad)
 angle_tan = tan(angle_rad)
 
 print(
-    "Do ângulo {:.2f}, o seno é {:.2f}, o cosseno {:.2f} e a tangente é {:.2f}.".format(
-        angle, angle_sin, angle_cos, angle_tan
-    )
+    f"Do ângulo {angle:.2f}, o seno é {angle_sin:.2f}, o cosseno {angle_cos:.2f} e a tangente é {angle_tan:.2f}."
 )

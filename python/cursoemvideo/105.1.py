@@ -1,3 +1,6 @@
+"""Classifies students grades."""
+
+
 def grades(*args, classification=False):
     """Receives grades, returns max, min, average and classification.
     Keywords Arguments:
@@ -22,4 +25,3 @@ def grades(*args, classification=False):
 
 reply = grades(5, 9, 7, 4, classification=True)
 print(reply)
-# help(grades)

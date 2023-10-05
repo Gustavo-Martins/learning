@@ -1,3 +1,4 @@
+"""Ramdom bet generator."""
 from random import randint
 
 

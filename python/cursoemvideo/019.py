@@ -1,4 +1,4 @@
-# Picks random student from list
+"""Picks random student from list."""
 from random import choice
 
 
@@ -10,4 +10,4 @@ name4 = str(input("Digite o quarto nome: "))
 name_list = [name1, name2, name3, name4]
 chosen = choice(name_list)
 
-print("O aluno sorteado foi: {}".format(chosen))
+print(f"O aluno sorteado foi: {chosen}")

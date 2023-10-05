@@ -1,19 +1,19 @@
-# Military conscription checker
+"""Military conscription age checker."""
 from datetime import date
 
 atual = date.today().year
 nasc = int(input("Ano de nascimento: "))
 idade = atual - nasc
-print("Quem nasceu em {} tem {} anos em {}.".format(nasc, idade, atual))
+print(f"Quem nasceu em {nasc} tem {idade} anos em {atual}.")
 if idade == 18:
     print("Você tem que se alistar IMEDIATAMENTE!")
 elif idade < 18:
     saldo = 18 - idade
-    print("Ainda faltam {} anos para o alistamento.".format(saldo))
+    print(f"Ainda faltam {saldo} anos para o alistamento.")
     ano = atual + saldo
-    print("Seu alistamento será em {}.".format(ano))
+    print(f"Seu alistamento será em {ano}.")
 elif idade > 18:
     saldo = idade - 18
-    print("Você já deveria ter se alistado há {} anos.".format(saldo))
+    print(f"Você já deveria ter se alistado há {saldo} anos.")
     ano = atual - saldo
-    print("O seu alistamento foi em {}.".format(ano))
+    print(f"O seu alistamento foi em {ano}.")

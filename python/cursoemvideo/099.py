@@ -1,4 +1,4 @@
-# Larger integer evaluation
+"""Larger integer evaluation."""
 from time import sleep
 
 

@@ -1,4 +1,4 @@
-# Reads number and prints if it's a prime 'number
+"""Reads number and prints if it's a prime number."""
 number = int(input("Digite um número: "))
 divisibles = 0
 
@@ -10,8 +10,8 @@ for c in range(1, number + 1):
         print("\033[31m", end="")
     print("{}".format(c), end=" ")
 
-print("\n\033[mO número {} foi divisível {} vezes.".format(number, divisibles))
+print(f"\n\033[mO número {number} foi divisível {divisibles} vezes.")
 if divisibles > 2:
-    print("O número {} não é primo.".format(number))
+    print(f"O número {number} não é primo.")
 else:
-    print("O número {} é primo.".format(number))
+    print(f"O número {number} é primo.")

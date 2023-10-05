@@ -1,4 +1,4 @@
-# Reads word list and print vowels
+"""Reads word list and print vowels;."""
 words = (
     "APRENDER",
     "PROGRAMAR",

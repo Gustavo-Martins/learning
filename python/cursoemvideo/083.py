@@ -1,4 +1,4 @@
-# Validate mathematical expressions
+"""Validate mathematical expressions."""
 stack = []
 expr = str(input("Digite a expressão: "))
 for simb in expr:

@@ -1,4 +1,4 @@
-# Matrix math
+"""Matrix math."""
 matrix = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
 evens = 0
 

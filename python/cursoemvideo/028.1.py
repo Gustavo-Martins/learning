@@ -1,4 +1,4 @@
-# Guessing game
+"""Guessing game."""
 from random import randint
 from time import sleep
 
@@ -13,4 +13,4 @@ sleep(2)
 if jogador == computador:
     print("PARABÉNS! Você conseguiu me vencer!")
 else:
-    print("GANHEI! Eu pensei no número {} e não no {}!".format(computador, jogador))
+    print(f"GANHEI! Eu pensei no número {computador} e não no {jogador}!")

@@ -1,4 +1,4 @@
-# Multiple players games registry
+"""Multiple players games registry."""
 jogador = {}
 partidas = []
 time = []

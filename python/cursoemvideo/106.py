@@ -1,3 +1,4 @@
+"""Prints Python libraries help."""
 from time import sleep
 
 

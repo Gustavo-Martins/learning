@@ -1,4 +1,4 @@
-# Employees registry
+"""Employees registry."""
 from datetime import datetime
 
 

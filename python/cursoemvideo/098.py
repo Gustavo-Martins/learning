@@ -1,4 +1,4 @@
-# Customized counting
+"""Customized counting."""
 from time import sleep
 
 
@@ -6,6 +6,7 @@ flourish = "-=" * 40
 
 
 def count(strt, ed, inc):
+    """'Countdown from start number to end number."""
     print(flourish)
     print(f"Contagem de {strt} até {ed} de {inc} em {inc}:")
 

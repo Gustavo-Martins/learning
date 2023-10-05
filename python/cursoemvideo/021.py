@@ -1,4 +1,4 @@
-# Opens and plays music
+"""Opens and plays music."""
 import pygame
 
 

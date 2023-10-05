@@ -1,4 +1,4 @@
-# Price classification
+"""Price classification."""
 cheapest = " "
 count = expensive_item = total = 0
 flourish = "-" * 15

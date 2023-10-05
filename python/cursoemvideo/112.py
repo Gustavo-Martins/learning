@@ -1,3 +1,4 @@
+"""Basic math with prices."""
 from packages.data.check import check
 from packages.currency.currency import summary
 

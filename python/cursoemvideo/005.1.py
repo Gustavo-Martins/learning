@@ -1,4 +1,4 @@
-# Gets input and prints previous and next number
+"""Gets input and prints previous and next number."""
 
 number = int(input("Digite um número inteiro: "))
 

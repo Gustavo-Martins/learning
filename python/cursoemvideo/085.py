@@ -1,4 +1,4 @@
-# Sorts odds and even numbers
+"""Sorts odds and even numbers."""
 numbers = [[], []]
 
 for c in range(1, 8):

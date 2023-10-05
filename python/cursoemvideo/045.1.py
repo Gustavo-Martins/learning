@@ -1,4 +1,4 @@
-# Rock, Papper, Scissors game
+"""Rock, Papper, Scissors game."""
 from random import randint
 from time import sleep
 
@@ -19,7 +19,7 @@ if player in range(0, 3):
     print("KEN")
     sleep(1)
     print("PO!")
-    print("Você jogou {}, e eu joguei {}.".format(options[player], options[computer]))
+    print(f"Você jogou {options[player]}, e eu joguei {options[computer]}.")
     if player == computer:
         print("Nós fizemos a mesma jogada.")
         print("Empate!")

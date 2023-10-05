@@ -1,3 +1,4 @@
+"""Voting age checks."""
 from datetime import date
 
 

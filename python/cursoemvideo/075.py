@@ -1,4 +1,4 @@
-# Reads and analyses numbers in a tuple
+"""Reads and analyses numbers in a tuple."""
 numbers = (
     int(input("Digite um número: ")),
     int(input("Digite um número: ")),

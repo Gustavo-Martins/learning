@@ -1,4 +1,4 @@
-# Players games registry
+"""Players games registry."""
 jogador = {}
 partidas = []
 jogador["nome"] = str(input("Nome do Jogador: "))

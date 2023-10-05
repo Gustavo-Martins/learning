@@ -1,4 +1,4 @@
-# People registry and age average
+"""People registry and age average."""
 person = {}
 registry = []
 choice = " "

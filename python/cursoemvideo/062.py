@@ -1,4 +1,4 @@
-# Prints arithmetic progression
+"""Prints arithmetic progression."""
 print("Gerador de PA")
 print("-=-" * 10)
 first = int(input("Primeiro termo:  "))
@@ -19,4 +19,4 @@ while additionalTerms != 0:
     additionalTerms = int(input("Quantos termos você quer mostrar a mais? "))
     counter = 1
     terms = additionalTerms
-print("A progressão aritmética terminou com {} termos.".format(total_terms))
+print(f"A progressão aritmética terminou com {total_terms} termos.")

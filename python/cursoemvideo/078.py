@@ -1,4 +1,4 @@
-# Prints max and min values in a list and their positions
+"""Prints max and min values in a list and their positions."""
 values = []
 flourish = "=-" * 30
 max = 0

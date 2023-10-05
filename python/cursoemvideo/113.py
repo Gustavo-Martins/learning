@@ -1,3 +1,6 @@
+"""Validates if user input is a float."""
+
+
 def read_float(msg):
     """Validates if input is a float."""
     while True:

@@ -1,4 +1,4 @@
-# Sorts National Olympics Committees
+"""Sorts National Olympics Committees."""
 nocs_table = (
     "United States",
     "China",

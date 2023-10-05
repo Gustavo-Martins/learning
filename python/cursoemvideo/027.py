@@ -1,8 +1,8 @@
-# Reads input and prints first and last name
+"""Reads input and prints first and last name."""
 
 name = str(input("Digite o seu nome completo: ")).split()
 
 print("Prazer em conhecê-lo!")
 print(name)
-print("O seu primeiro nome é: {}".format(name[0]))
-print(" O seu último nome é: {}".format(name[-1]))
+print(f"O seu primeiro nome é: {name[0]}")
+print(f"O seu último nome é: {name[-1]}")

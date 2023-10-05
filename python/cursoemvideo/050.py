@@ -1,10 +1,10 @@
-# Reads numbers and sums even numbers
+"""Reads numbers and sums even numbers."""
 counter = 0
 total = 0
 for c in range(1, 7):
-    number = int(input("Digite o {}º número: ".format(c)))
+    number = int(input(f"Digite o {c}º número: "))
     if number % 2 == 0:
         total += number
         counter += 1
 
-print("A soma dos {} números pares digitados é: {}".format(counter, total))
+print(f"A soma dos {counter} números pares digitados é: {total}")

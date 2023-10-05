@@ -1,4 +1,4 @@
-# Reads input and outputs new salary value
+"""Reads input and outputs new salary value."""
 salary = float(input("Qual é o salário do funcionário? R$ "))
 
 if salary > 1250:

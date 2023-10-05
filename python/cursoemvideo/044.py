@@ -1,5 +1,5 @@
-# Total purchase value calculator
-print("{:=^40}".format(" LOJAS GLAMAZON "))
+"""Total purchase value calculator."""
+print(f"{' LOJAS GLAMAZON ':=^40}")
 subtotal = float(input("Digite valor da sua compra: "))
 payment_method = float(
     input(
@@ -13,17 +13,13 @@ payment_method = float(
 
 if payment_method == 1:
     total = subtotal - (subtotal * 0.10)
-    print(
-        "O preço final da compra de R$ {:.2f} será: R$ {:.2f}".format(subtotal, total)
-    )
+    print(f"O preço final da compra de R$ {subtotal:.2f} será: R$ {total:.2f}")
 elif payment_method == 2:
     total = subtotal - (subtotal * 0.05)
-    print(
-        "O preço final da compra de R$ {:.2f} será: R$ {:.2f}".format(subtotal, total)
-    )
+    print(f"O preço final da compra de R$ {subtotal:.2f} será: R$ {total:.2f}")
 elif payment_method == 3:
     print("Não serão aplicados descontos ou juros na sua compra.")
-    print("O preço final da sua compra será compra de R$ {:.2f}".format(subtotal))
+    print(f"O preço final da sua compra será compra de R$ {subtotal:.2f}")
 elif payment_method == 4:
     n_monthly_payments = int(input("Digite o número de parcelas: "))
     if n_monthly_payments < 3:
@@ -32,14 +28,8 @@ elif payment_method == 4:
         monthly_payment_value = float(subtotal / n_monthly_payments)
         total = subtotal - (subtotal * 0.20)
         print(
-            "Sua compra será parcelada em {}x de R$ {:.2f} com juros.".format(
-                n_monthly_payments, monthly_payment_value
-            )
+            f"Sua compra será parcelada em {n_monthly_payments}x de R$ {monthly_payment_value:.2f} com juros."
         )
-        print(
-            "O preço final da sua compra de R$ {:.2f} será: R$ {:.2f}".format(
-                subtotal, total
-            )
-        )
+        print(f"O preço final da sua compra de R$ {subtotal:.2f} será: R$ {total:.2f}")
 else:
     print("Por favor, selecione uma forma de pagamento válida.")

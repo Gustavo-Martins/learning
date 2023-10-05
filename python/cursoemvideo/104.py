@@ -1,3 +1,6 @@
+"""Validates int inputs from users."""
+
+
 def read_int(msg):
     """Validates if input is an integer."""
     ok = False

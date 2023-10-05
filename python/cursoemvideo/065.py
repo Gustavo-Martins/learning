@@ -1,4 +1,4 @@
-# Reads numbers and prints max and min values
+"""Reads numbers and prints max and min values."""
 average = count = max = min = sum = 0
 choice = "s"
 
@@ -16,5 +16,5 @@ while choice in "Ss":
     choice = str(input("Quer continuar? [S/N] ").strip()[0])
 average = sum / count
 print("Acabou")
-print("Você digitou {} números e a média foi {:.1f}".format(count, average))
-print("O maior valor foi {}, e o menor foi {}".format(max, min))
+print(f"Você digitou {count} números e a média foi {average:.1f}")
+print(f"O maior valor foi {max}, e o menor foi {min}")

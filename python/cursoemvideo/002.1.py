@@ -1,4 +1,3 @@
-# https://www.python.org/dev/peps/pep-3101/
-
+"""Prints user name."""
 name = input("Digite o seu nome: ")
-print("É um prazer te conhecer, {}!".format(name))
+print(f"É um prazer te conhecer, {name}!")

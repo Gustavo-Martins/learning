@@ -1,3 +1,6 @@
+"""Football players goals registry."""
+
+
 def register(p="<desconhecido>", g=0):
     print(f"O jogador {p} fez {g} gols.")
 
